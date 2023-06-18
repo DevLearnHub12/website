@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS rules go here */
+    body {
+      background-color: lightgray;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      color: blue;
+      text-align: center;
+    }
+    
+    p {
+      color: darkgreen;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to CSS Editor!</h1>
+  <p>CSS (Cascading Style Sheets) is a language used to style the appearance of web pages.</p>
+  <p class="highlight">CSS rules consist of selectors and declarations.</p>
+  
+
+ 
+
+  <script>
+    function applyCSS() {
+      const cssCode = document.getElementById("css-editor").value;
+      const styleElement = document.createElement("style");
+      styleElement.innerHTML = cssCode;
+      document.head.appendChild(styleElement);
+    }
+  </script>
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="css.html">back</a>
+</body>
+</html>

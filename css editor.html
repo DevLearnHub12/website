@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS rules for the introduction section */
+    .introduction {
+      background-color: lightblue;
+      padding: 20px;
+    }
+    
+    .introduction h1 {
+      color: darkblue;
+      text-align: center;
+    }
+    
+    .introduction p {
+      color: darkblue;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    /* CSS rules for the examples section */
+    .examples {
+      background-color: lightgray;
+      padding: 20px;
+    }
+    
+    .examples h2 {
+      color: darkgray;
+      margin-bottom: 10px;
+    }
+    
+    .examples .box {
+      width: 200px;
+      height: 200px;
+      background-color: lightgreen;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="introduction">
+    <h1>Welcome to CSS Introduction!</h1>
+    <p>CSS (Cascading Style Sheets) is a language used to describe the look and formatting of a document written in HTML.</p>
+    <p>With CSS, you can control the colors, fonts, layouts, and other visual aspects of your web page.</p>
+  </div>
+
+  <div class="examples">
+    <h2>Examples:</h2>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div class="css-editor">
+    <textarea id="css-code" rows="10" cols="50"></textarea>
+    <button onclick="applyCSS()">Apply CSS</button>
+  </div>
+
+  <script>
+    function applyCSS() {
+      const cssCode = document.getElementById("css-code").value;
+      const styleElement = document.createElement("style");
+      styleElement.innerHTML = cssCode;
+      document.head.appendChild(styleElement);
+    }
+  </script>
+   <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="css.html">back</a>
+  </div>
+</body>
+</html>

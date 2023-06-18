@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+  <style>
+    /* CSS rules for the editor section */
+    .editor {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="editor"></div>
+  <button onclick="runCode(<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+  <style>
+    /* CSS rules for the editor section */
+    .editor {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="editor"></div>
+  <button onclick="runCode()">Run Code</button>
+
+  <div class="output">
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/python/python.min.js"></script>
+  <script>
+    // Initialize the CodeMirror editor
+    var editor = CodeMirror(document.querySelector('.editor'), {
+      mode: 'python',
+      lineNumbers: true,
+      theme: 'default',
+    });
+
+    function runCode() {
+      var code = editor.getValue();
+      var outputElement = document.getElementById('output');
+      try {
+        // Use eval to execute the Python code
+        var result = eval(code);
+        outputElement.textContent = result;
+      } catch (error) {
+        outputElement.textContent = 'Error: ' + error.message;
+      }
+    }
+  </script>
+</body>
+</html>
+)">Run Code</button>
+
+  <div class="output">
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/python/python.min.js"></script>
+  <script>
+    // Initialize the CodeMirror editor
+    var editor = CodeMirror(document.querySelector('.editor'), {
+      mode: 'python',
+      lineNumbers: true,
+      theme: 'default',
+    });
+
+    function runCode() {
+      var code = editor.getValue();
+      var outputElement = document.getElementById('output');
+      try {
+        // Use eval to execute the Python code
+        var result = eval(code);
+        outputElement.textContent = result;
+      } catch (error) {
+        outputElement.textContent = 'Error: ' + error.message;
+      }
+    }
+  </script>
+  div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="python.html">back</a>
+</body>
+</html>
+
+<
